@@ -1,0 +1,124 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href="http://www.w3schools.com/w3css/w3.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <!--
+    
+
+        -->
+</head>
+
+<body>
+
+    <div class="w3-container">
+
+        <div class="w3-row">
+            <div class="w3-col s12 m12 l12 w3-center">
+                <h1>
+                    <%= title %>
+                </h1>
+            </div>
+        </div>
+
+        <form id="survey" action="/users" method="post">
+            <div class="w3-row" id="fullname">
+                <div class="w3-col s12 m5 l3">
+                    <label class="inline" for="name">
+                        Your Name:
+                    </label>
+                </div>
+                <div class="w3-col s12 m7 l9">
+                    <input type="text" name="name"/>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col s12 m5 l3">
+                    <label id="location"  class="inline" for="location-select">
+                        Dojo Location:                
+                    </label>
+                </div>
+                <div class="w3-col s12 m7 l9">
+                    <select id="location-select" name="location">
+                        <option value="Mountain View">Mountain View</option>
+                        <option value="Redwood City">Redwood City</option>
+                        <option value="San Carlos">San Carlos</option>
+                        <option value="San Jose">San Jose</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="Mill Valley">Mill Valley</option>
+                        <option value="Half Moon Bay">Half Moon Bay</option>
+                        <option value="Froster City">Froster City</option>
+                        <option value="San Mateo">San Mateo</option>        
+                    </select>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col s12 m5 l3">
+                    <label id="language"  class="inline" for="language-select">
+                        Favorite Language:
+                    </label>
+                </div>
+                <div class="w3-col s12 m7 l9">        
+                    <select id="language-select" name="language">
+                        <option value="Javascript">Javascript</option>
+                        <option value="Python">Python</option>
+                        <option value="Ruby">Ruby</option>
+                        <option value="C/C++">C/C++</option>
+                        <option value="Perl">Perl</option>
+                        <option value="tcl/tk">tcl/tk</option>
+                        <option value="Bash">Bash</option>
+                        <option value="Tcsh">Tcsh</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col s12 m5 l3">
+                    <label id="e-mail"  class="inline" for="e-mail-input">
+                        Email:
+                    </label>
+                </div>
+                <div class="w3-col s12 m7 l9">        
+                    <input id="e-mail-input" type="text" name="email" class="eight"/>
+                </div>
+            </div>
+
+            <div class="w3-row">
+                <div class="w3-col s12 m12 l12">
+                    <label id="comment"  class="inline" for="comment-box">
+                        Comment (optional):
+                    </label>
+                </div>
+                <div class="w3-col s12 m12 l12">
+                    <textarea id="comment-box" rows="4" name="comment"></textarea>
+                </div>
+            </div>
+            
+            <div class="w3-row">
+                <div class="w3-col s12 m9 l7">
+                    &nbsp;
+                </div>
+                <div class="w3-col s12 m3 l5">                
+                    <input id="submit-button" type="submit" value="create user"/>
+                </div>
+            </div>
+            
+        </form>
+    </div>
+
+    <script>
+    </script>
+</body>

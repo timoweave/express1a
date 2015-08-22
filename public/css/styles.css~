@@ -1,0 +1,5 @@
+#survey {
+    width: 80%;
+    border: 0.1em solid grey;
+    background-color: green;
+}

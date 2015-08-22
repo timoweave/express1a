@@ -1,0 +1,112 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Survey</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/3.0.3/normalize.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/css/foundation.min.css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script href="https://cdnjs.cloudflare.com/ajax/libs/foundation/5.5.2/js/foundation.min.js" rel="stylesheet"></script>
+
+
+</head>
+
+<body>
+
+    
+<h1><%= title %>
+</h1>
+
+<form id="survey" action="/users" method="post">
+    <div class="row">
+        <div class="two columns">
+            <label id="fullname" class="inline" for="name">
+                Your Name:
+            </label>
+        </div>
+        <div class="ten columns">
+            <input type="text" name="name"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="two columns">
+            <label id="location"  class="inline" for="location-select">
+                Dojo Location:                
+            </label>
+        </div>
+        <div class="ten columns">
+            <select id="location-select">
+                <option value="Mountain View">Mountain View</option>
+                <option value="Redwood City">Redwood City</option>
+                <option value="San Carlos">San Carlos</option>
+                <option value="San Jose">San Jose</option>
+                <option value="San Francisco">San Francisco</option>
+                <option value="Mill Valley">Mill Valley</option>
+                <option value="Half Moon Bay">Half Moon Bay</option>
+                <option value="Froster City">Froster City</option>
+                <option value="San Mateo">San Mateo</option>        
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="two columns">
+            <label id="language"  class="inline" for="language-select">
+                Favorite Language:
+            </label>
+        </div>
+        <div class="ten columns">        
+            <select id="language-select">
+                <option value="Javascript">Javascript</option>
+                <option value="Python">Python</option>
+                <option value="Ruby">Ruby</option>
+                <option value="C/C++">C/C++</option>
+                <option value="Perl">Perl</option>
+                <option value="tcl/tk">tcl/tk</option>
+                <option value="Bash">Bash</option>
+                <option value="Tcsh">Tcsh</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="two columns">
+            <label id="e-mail"  class="inline" for="e-mail-input">
+                Email:
+            </label>
+        </div>
+        <div class="ten columns">        
+            <input id="e-mail-input" type="text" name="email" class="eight"/>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="twelve columns">
+            <label id="comment"  class="inline" for="comment-box">
+                Comment (optional):
+            </label>
+            <textarea id="comment-box" rows="4" cols="50"></textarea>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="twelve columns">
+            <input id="submit-button" type="submit" value="create user" align="right"/>
+        </div>
+    </div>
+
+</form>
+
+
+<script>
+</script>
+</body>

@@ -1,0 +1,14 @@
+$(document).ready(function() {
+    var socket = io.connect();
+    
+    $('#submit-button').click(function() {
+        data = { name : $('#fullname-input').value(),
+                 location : $('#location-select').value(),
+                 language : $('#language-select').value(),
+                 email :  $('#e-mail-input').value(),
+                 comment : $('#comment-box').value()
+               };
+        console.log(data);
+        socket.emit("posting_form", data);
+    });
+});

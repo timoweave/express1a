@@ -1,0 +1,49 @@
+#result {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border: 0.1em solid grey;
+}
+
+#survey {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em 2em;
+    border: 0.1em solid grey;
+}
+
+#survey .w3-row {
+    margin-top: 0.15em;
+    margin-bottom: 0.15em;
+    padding-top: 0.15em;
+    padding-bottom: 0.15em;
+}
+
+#survey input {
+    width: 100%;
+}
+
+input#submit-button {
+    width: 100%;
+    background-color: lightblue;
+    border:0em;
+    box-shadow:0.1em 0.1em 0.1em lightgrey;
+}
+
+#survey select {
+    width:100%;
+    border-radius:0em;
+}
+
+#survey textarea {
+    width:100%;
+}
+
+#feedback {
+    width: 80%;
+    border: 0.1em solid black;
+    background-color: lightgreen;
+    margin: 0em auto;
+    margin-bottom:1em;
+    padding:1em; 0.5em;
+}
